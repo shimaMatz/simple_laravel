@@ -10,12 +10,7 @@ class GreetingController extends Controller
         return view('greeting.index');
     }
 
-    public function welcome(Request $request){
-        $rule = [
-            'username' => 'required|max:20'
-        ];
-
-        $request->validate($rule);
+    public function welcome(GreetingRequest $request){
 
         $username = $request->input('username');
         return view('greeting.welcome', ['username' => $username]);

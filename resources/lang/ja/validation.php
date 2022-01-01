@@ -147,6 +147,9 @@ return [
 
     'attributes' => [
         'username' => 'ユーザー名',
+        'password' => 'パスワード',
+        'latitude' => '緯度',
+        'longitude' => '経度',
     ],
 
 ];

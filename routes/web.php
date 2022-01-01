@@ -20,3 +20,6 @@ Route::get('/hello', 'HelloController@index');
 Route::get('/greeting', 'GreetingController@index');
 Route::post('/greeting/welcome', 'GreetingController@welcome');
 Route::get('/greeting/hello', 'GreetingController@hello');
+
+Route::get('/profile', 'ProfileController@index');
+Route::post('/profile/confirm', 'ProfileController@confirm');
